@@ -1,0 +1,4 @@
+<h5>Weather in:</h5>
+<ul class="list-group">
+    <li *ngFor="let city of citiesList; let i=index" class="list-group-item">{{(i+1) + ". " + city.name + " " + city.temp + " " + getUnitSign(city.unit) + " " + ", " + city.description  }}</li>
+</ul>

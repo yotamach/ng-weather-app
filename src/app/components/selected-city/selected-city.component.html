@@ -1,0 +1,10 @@
+<div class="card" *ngIf="showDetails">
+  <div class="card-body text-center">
+    <span class="card-title">{{ selectedCity.name + " " +  selectedCity.temp + " " + getUnitSign(selectedCity.unit) }} <img [src]="getWeatherImage()"></span>
+  </div>
+</div>
+<div class="card" *ngIf="errorMessage">
+    <div class="card-body">
+        <span class="card-title">{{ errorMessage }}</span>
+    </div>
+</div>
